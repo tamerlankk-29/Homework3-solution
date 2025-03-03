@@ -13,7 +13,15 @@ public class Dungeon {
 
     public void displayInfo() {
         System.out.println("Dungeon Name: " + name);
+
         System.out.println("Rooms: " + rooms.size());
+        for (Room room : rooms) {
+            System.out.println(" - " + room);
+        }
+
         System.out.println("NPCs: " + npcs.size());
+        for (NPC npc : npcs) {
+            System.out.println(" - " + npc);
+        }
     }
 }
